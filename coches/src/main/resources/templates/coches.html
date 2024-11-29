@@ -16,12 +16,16 @@
 			<tr>
 				<td><p th:text="#{coche.marca}"></p></td>
 				<td><p th:text="#{coche.modelo}"></p></td>
-				<td><p th:text="#{coche.ano}"></p></td>
+				<td><p th:text="#{coche.anyo}"></p></td>
+				<td><p th:text="#{coche.precio}"></p></td>
+				<td><p th:text="#{coche.fuenteEnergia}"></p></td>
 			</tr>
 			<tr th:each="coche: ${coches}">
 				<td th:text="${coche.marca}"></td>
 				<td th:text="${coche.modelo}"></td>
 				<td th:text="${coche.ano}"></td>
+				<td th:text="${coche.precio}"></td>
+				<td th:text="${coche.fuenteEnergia}"></td>
 			</tr>
 		</table>
 	</div>
